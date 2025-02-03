@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Delius;
+    box-sizing: border-box;
+    position: relative;
+
+}
+body{
+    background: #c781cf;
+}
+ul{
+    list-style: none;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.timeline{
+    position:relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    margin-top:3px;
+}
+.header{
+    text-align: center;
+    font-size: 48px;
+    background-color: #b06db8;
+    box-shadow: 0px 3px #a063a7;
+}
+.container{
+    padding:10px 30px;
+    position:relative;
+    width: 50%;
+    border-radius: 10px;
+    
+}
+li .odds{
+    left:0;
+}
+li .odds::after{
+    content:" ";
+    height: 0px;
+    width: 0px;
+    position:absolute;
+    top: 28px;
+
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #dcdeff;
+    right: 615px;
+}
+li .odds .textbox{
+    box-shadow: -8px 10px #a063a7;
+}
+li .evens{
+    left: 50%;
+}
+li .evens::after{
+    content:" ";
+    height: 0px;
+    width: 0px;
+    position:absolute;
+    top: 28px;
+
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #dcdeff;
+    left: 15px;
+}
+li .evens .textbox{
+    box-shadow: 8px 10px #a063a7;
+}
+li .evens .desc{
+    display: flex;
+    gap: 10px;
+}
+
+li .odds .desc{
+    display: flex;
+    gap: 10px;
+}
+
+
+.textbox{
+    padding:20px 30px;
+    background-color: #dcdeff;
+    position:relative;
+    border-radius: 6px;
+    font-size: 15px;
+    
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.portrait{
+    width: 40%;
+}
+.landscape{
+    width: 50%;
+}
