@@ -100,8 +100,15 @@ li .odds .desc{
     margin-left: -3px;
 }
 .portrait{
-    width: 40%;
+    width: 100%;
 }
-.landscape{
-    width: 50%;
+
+.final{
+    font-size: 64px;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 300px;
+}
+.last{
+width: 25%;
 }
